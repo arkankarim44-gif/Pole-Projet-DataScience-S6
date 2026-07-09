@@ -42,14 +42,3 @@ Run the notebooks in order:
 2. **`data-exploration.ipynb`** — inspect and visualize the loaded assets.
 3. **`glasso.ipynb`** — standardize over a chosen time window and fit the Graphical Lasso model.
 
-## Method
-
-Graphical Lasso estimates a sparse precision matrix Θ by solving:
-
-$$\hat{\Theta} = \arg\max_{\Theta \succ 0} \; \log\det\Theta - \operatorname{tr}(S\Theta) - \lambda \lVert\Theta\rVert_1$$
-
-where *S* is the empirical covariance and λ controls sparsity. Non-zero off-diagonal entries reveal the conditional (partial-correlation) dependencies between assets.
-
-## License
-
-MIT
